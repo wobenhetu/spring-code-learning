@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: test-spring
-Automatic-Module-Name: test.spring
-Implementation-Version: 5.1.13.BUILD-SNAPSHOT
-Created-By: 1.8.0_211 (Oracle Corporation)
-

@@ -1,1 +1,0 @@
-D:\workspaces\spring\spring-framework-5.1.x\spring-framework-5.1.x\test-spring\build\classes\java\main\com\spring\testspring\TestMain.class;D:\workspaces\spring\spring-framework-5.1.x\spring-framework-5.1.x\test-spring\build\classes\java\main\com\spring\testspring\beans\Student.class
