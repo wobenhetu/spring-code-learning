@@ -8,6 +8,8 @@
 	<aop:aspectj-autoproxy ></aop:aspectj-autoproxy>
 
 	<bean id="test" class="com.spring.testspring.aop.TestBean"></bean>
+	<bean id="test2" class="com.spring.testspring.aop.TestBean2"></bean>
+
 
 	<bean class="com.spring.testspring.aop.AspectTest"></bean>
 </beans>

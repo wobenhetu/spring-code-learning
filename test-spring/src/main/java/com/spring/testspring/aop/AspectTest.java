@@ -2,18 +2,18 @@ package com.spring.testspring.aop;
 
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 
 @Aspect
 public class AspectTest {
 
-	@Pointcut("execution(*  *.test(..))")
+	/*@Pointcut("execution(*  *.test(..))")
 	public void test(){
 
-	}
+	}*/
+
+	@Pointcut("@annotation(com.spring.testspring.aop.MyNameAnnotation)")
+	public void test(){ }
 
 	@Before("test()")
 	public void beforeTest(){
@@ -25,6 +25,8 @@ public class AspectTest {
 		System.out.println("afterTest");
 	}
 
+
+	@Around("test()")
 	public Object aroundTest(ProceedingJoinPoint proceedingJoinPoint){
 
 		System.out.println("before!");

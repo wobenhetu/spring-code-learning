@@ -1,6 +1,6 @@
 package com.spring.testspring.aop;
 
-public class TestBean {
+public class TestBean2 {
 
 	public String getTestStr() {
 		return testStr;
@@ -10,12 +10,10 @@ public class TestBean {
 		this.testStr = testStr;
 	}
 
-	private String testStr = "testStr";
+	private String testStr = "testStr2";
 
 
-	@MyNameAnnotation
 	public void test(){
-		System.out.println("test");
+		System.out.println("testbean2");
 	}
-
 }

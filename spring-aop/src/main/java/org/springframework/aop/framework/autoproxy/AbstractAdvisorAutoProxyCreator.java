@@ -68,6 +68,9 @@ public abstract class AbstractAdvisorAutoProxyCreator extends AbstractAutoProxyC
 	}
 
 
+	/*
+	* 对于指定bean的增强方法的获取一定是包含两个步骤的：获取所有的增强以及寻找所有增强中适用于bean的增强并应用；
+	* */
 	@Override
 	@Nullable
 	protected Object[] getAdvicesAndAdvisorsForBean(
