@@ -64,6 +64,11 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
 	public ClassPathXmlApplicationContext() {
 	}
 
+	@Override
+	protected void onRefresh() throws BeansException {
+		super.onRefresh();
+	}
+
 	/**
 	 * Create a new ClassPathXmlApplicationContext for bean-style configuration.
 	 * @param parent the parent context
