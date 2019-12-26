@@ -60,4 +60,15 @@ public class BeansTest {
 		Apology apology = (Apology) greetingImpl; // 将目标类强制向上转型为 Apology 接口（这是引入增强给我们带来的特性，也就是“接口动态实现”功能）
 		apology.saySorry("Jack");
 	}
+
+
+	@Test
+	public void testBeanPostProcessor(){
+
+		System.out.println("dfw==");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:application.xml");
+		Student student = (Student) applicationContext.getBean("student");
+		System.out.println(student.getName()+"  年龄："+student.getAge());
+	}
+
 }

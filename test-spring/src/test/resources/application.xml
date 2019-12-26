@@ -3,8 +3,12 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+
 	<bean id="student" class="com.spring.testspring.beans.Student">
 		<property name="name" value="laoye"/>
 		<property name="age" value="1"/>
 	</bean>
+
+	<bean class="com.spring.testspring.beanpostprocessor.MyBeanPostProcessor" />
 </beans>
