@@ -38,6 +38,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 			stu.setAge("23");
 			stu.setName("laoli");
 		}
+
 		System.out.println("对象"+beanName+"实例化完成");
 		return bean;
 	}

@@ -4,6 +4,9 @@ import com.spring.testspring.aop.TestBean;
 import com.spring.testspring.aop.TestBean2;
 import com.spring.testspring.aop.aop1.*;
 import com.spring.testspring.beans.Student;
+import com.spring.testspring.jdkproxy.MyInterfaces;
+import com.spring.testspring.jdkproxy.MyInterfaces2;
+import com.spring.testspring.jdkproxy.MyInterfacesIml;
 import org.junit.Test;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.context.ApplicationContext;
@@ -71,4 +74,19 @@ public class BeansTest {
 		System.out.println(student.getName()+"  年龄："+student.getAge());
 	}
 
+	/*
+	* 测试jdk动态代理
+	* */
+	@Test
+	public void testJDKProxy(){
+		System.out.println("dfw==");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:application.xml");
+		MyInterfaces2 myInterfacesIml = (MyInterfaces2) applicationContext.getBean("myInterfacesIml");
+		myInterfacesIml.query2();
+
+		MyInterfaces myInterfaces = (MyInterfaces) applicationContext.getBean("myInterfacesIml");
+		myInterfaces.query();
+		myInterfaces.insert();
+
+	}
 }

@@ -3,10 +3,15 @@ package com.spring.testspring.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("student")
 public class Student {
 
 	public String age;
+
+	public Student() {
+
+		System.out.println("student init!!!");
+	}
 
 	public String getAge() {
 		return age;
@@ -25,5 +30,6 @@ public class Student {
 	}
 
 	public String name;
+
 
 }
