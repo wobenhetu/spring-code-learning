@@ -5,7 +5,7 @@ import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class GreetingIntroAdvice extends DelegatingIntroductionInterceptor implements Apology {
  
     @Override

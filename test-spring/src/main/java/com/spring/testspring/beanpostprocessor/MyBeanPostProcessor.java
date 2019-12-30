@@ -20,7 +20,7 @@ BeanPostProcessor接口提供了两个方法：
 （2）获取所有的BeanFactoryPostProcessor类型的类并初始化，添加到列表中
 （3）在列表中循环执行所有的BeanFactoryPostProcessor实现类。
 */
-@Component
+//@Component
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
 	@Override

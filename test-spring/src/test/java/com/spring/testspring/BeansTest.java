@@ -27,9 +27,11 @@ public class BeansTest {
     public void testAop(){
 		System.out.println("dfw==main");
 		ApplicationContext bf = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
+		//被代理
 		TestBean testBean = (TestBean) bf.getBean("test");
 		testBean.test();
 
+		//未被代理
 		TestBean2 testBean2 = (TestBean2) bf.getBean("test2");
 		testBean2.test();
 	}
